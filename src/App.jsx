@@ -7,6 +7,8 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import NotFound from './pages/NotFound'
 import Navbar from './components/Navbar'
+import Counter from './pages/Counter'
+import Post from './pages/Post'
 
 function App() {
   return(
@@ -14,8 +16,11 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='Login' element={<Login/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/counter' element={<Counter/>}/>
       <Route path='*' element={<NotFound/>}/>
+      <Route path='/post' element={<Post/>}/>
+
     </Routes>
 
    </Router>
