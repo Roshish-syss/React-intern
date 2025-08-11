@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound'
 import Navbar from './components/Navbar'
 import Counter from './pages/Counter'
 import Post from './pages/Post'
+import Tudos from './pages/Tudos'
 
 function App() {
   return(
@@ -20,6 +21,8 @@ function App() {
       <Route path='/counter' element={<Counter/>}/>
       <Route path='*' element={<NotFound/>}/>
       <Route path='/post' element={<Post/>}/>
+      <Route path='/tudos' element={<Tudos/>}/>
+      
 
     </Routes>
 
